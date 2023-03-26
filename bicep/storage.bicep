@@ -4,7 +4,6 @@
 param stgName string
 
 param location string = resourceGroup().location
-
 var StorageName = toLower(stgName)
 
 resource storageAccount_res 'Microsoft.Storage/storageAccounts@2021-08-01' = {
